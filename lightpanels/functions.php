@@ -131,10 +131,30 @@ function lightpanels_widgets_init() {
 		'after_title'   => '',
 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'phone', 'lightpanels' ),
+		'name'          => esc_html__( 'Верхний телефон', 'lightpanels' ),
 		'id'            => 'phone',
 		'description'   => esc_html__( 'Add phone here.
 		<a href="tel:+79000000000"><span class="header-icon"></span>+ 7 900 000 00 00</a>', 'lightpanels' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '',
+		'after_title'   => '',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Нижний телефон', 'lightpanels' ),
+		'id'            => 'phone_n',
+		'description'   => esc_html__( 'Add phone here.
+		<a href="tel:+79000000000"><span class="header-icon"></span>+ 7 900 000 00 00</a>', 'lightpanels' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '',
+		'after_title'   => '',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Почтовый адрес', 'lightpanels' ),
+		'id'            => 'mail',
+		'description'   => esc_html__( 'Add e-mail here.
+		<a href="mailto:sales@svetolimp.ru"><span class="mail-icon"></span>sales@svetolimp.ru</a>', 'lightpanels' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '',

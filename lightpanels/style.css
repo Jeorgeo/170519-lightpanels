@@ -198,12 +198,18 @@ h6 {
   color: #e9b637;
 }
 
-.header-icon {
+.header-icon,
+.mail-icon {
   display: inline-block;
   width: 1em;
   height: 1em;
   margin-right: 0.5em;
   background: url("img/phone-icon.png") no-repeat 0 0;
+  background-size: contain;
+}
+
+.mail-icon {
+  background: url("img/mail-icon.png") no-repeat 0 2px;
   background-size: contain;
 }
 
@@ -1216,7 +1222,7 @@ main {
   .footer-phone{
     float: left;
     width: 25%;
-    margin-top: 5%;
+    margin-top: 0;
     margin-left: 10%;
   }
 
@@ -1380,9 +1386,21 @@ main {
     padding-top: 35px;
   }
 
+  .main-footer {
+    padding-top: 3em;
+  }
+
+  .footer-contacts-social {
+    margin: 3em auto 0 auto;
+  }
+
   .footer-phone {
-    margin-top: 40px;
-    font-size: 1.4em;
+    margin-top: 0;
+    font-size: 1.2em;
+  }
+
+  .footer-phone .textwidget {
+    margin-bottom: 0.8em;
   }
 
 /*-------------------------Third - For Tablet 1024px--------------------------*/
@@ -1622,4 +1640,11 @@ main {
     margin-bottom: 4em;
   }
 
+}
+
+
+/**********************custom css ************************************/
+
+.bazz-widget {
+  right: 90px!important;
 }

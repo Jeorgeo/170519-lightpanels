@@ -32,6 +32,7 @@
 <meta name="yandex-verification" content="962d17dfc5abf874" />
   </head>
   <body>
+    <span id="top"></span>
     <header class="main-header">
       <div class="container clearfix">
         <div class="main-header-logo">
@@ -49,6 +50,7 @@
         </nav>
         <div class="main-header-contacts">
           <?php dynamic_sidebar( 'phone' ); ?>
+          <?php dynamic_sidebar( 'phone_n' ); ?>
           <?php dynamic_sidebar( 'work_filds' ); ?>
         </div>
       </div>

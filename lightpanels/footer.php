@@ -18,6 +18,8 @@
 		</div>
 		<div class="footer-phone">
 			<?php dynamic_sidebar( 'phone' ); ?>
+			<?php dynamic_sidebar( 'phone_n' ); ?>
+			<?php dynamic_sidebar( 'mail' ); ?>
 		</div>
 		<div class="footer-contacts">
 			<div class="footer-contacts-adress">
@@ -30,17 +32,19 @@
 	</div>
 </footer>
 <div id="toTop">
-	<a class="arrow-up" href="#">
+	<a class="arrow-up" href="#top">
 		<span>arrow-up</span>
 	</a>
 </div>
 
-<script src="<?php bloginfo("template_directory"); ?>/js/jquery-1.11.2.min.js"></script>
+<script src="<?php bloginfo("template_directory"); ?>/js/jquery-3.2.0.min.js"></script>
+<script src="<?php bloginfo("template_directory"); ?>/js/jquery-migrate-1.4.1.min.js"></script>
 <script src="<?php bloginfo("template_directory"); ?>/js/main.js"></script>
 <!-- BEGIN JIVOSITE CODE {literal} -->
 <script type='text/javascript'>
 (function(){ var widget_id = 'bBjDA8kc0B';var d=document;var w=window;function l(){
 var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
 <!-- {/literal} END JIVOSITE CODE -->
+<?php wp_footer(); ?>
 </body>
 </html>
